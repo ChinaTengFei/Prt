@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/dalvikvm.dir/dalvikvm.cc.o"
+  "CMakeFiles/dalvikvm.dir/dalvikvm.o"
   "dalvikvm.pdb"
   "dalvikvm"
 )

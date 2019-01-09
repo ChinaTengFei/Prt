@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/local/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/local/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Volumes/work/PRT
+CMAKE_SOURCE_DIR = /Volumes/work/PRT/dalvikvm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Volumes/work/PRT
+CMAKE_BINARY_DIR = /Volumes/work/PRT/dalvikvm
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Volumes/work/PRT
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/opt/local/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Volumes/work/PRT && $(CMAKE_COMMAND) -E cmake_progress_start /Volumes/work/PRT/CMakeFiles /Volumes/work/PRT/dalvikvm/CMakeFiles/progress.marks
-	cd /Volumes/work/PRT && $(MAKE) -f CMakeFiles/Makefile2 dalvikvm/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/work/PRT/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/work/PRT/dalvikvm/CMakeFiles /Volumes/work/PRT/dalvikvm/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/work/PRT/dalvikvm/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Volumes/work/PRT && $(MAKE) -f CMakeFiles/Makefile2 dalvikvm/clean
+	$(MAKE) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -97,60 +97,46 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Volumes/work/PRT && $(MAKE) -f CMakeFiles/Makefile2 dalvikvm/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Volumes/work/PRT && $(MAKE) -f CMakeFiles/Makefile2 dalvikvm/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Volumes/work/PRT && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-dalvikvm/CMakeFiles/dalvikvm.dir/rule:
-	cd /Volumes/work/PRT && $(MAKE) -f CMakeFiles/Makefile2 dalvikvm/CMakeFiles/dalvikvm.dir/rule
-.PHONY : dalvikvm/CMakeFiles/dalvikvm.dir/rule
+#=============================================================================
+# Target rules for targets named dalvikvm
 
-# Convenience name for target.
-dalvikvm: dalvikvm/CMakeFiles/dalvikvm.dir/rule
-
+# Build rule for target.
+dalvikvm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dalvikvm
 .PHONY : dalvikvm
 
 # fast build rule for target.
 dalvikvm/fast:
-	cd /Volumes/work/PRT && $(MAKE) -f dalvikvm/CMakeFiles/dalvikvm.dir/build.make dalvikvm/CMakeFiles/dalvikvm.dir/build
+	$(MAKE) -f CMakeFiles/dalvikvm.dir/build.make CMakeFiles/dalvikvm.dir/build
 .PHONY : dalvikvm/fast
 
-dalvikvm.o: dalvikvm.cc.o
-
+# target to build an object file
+dalvikvm.o:
+	$(MAKE) -f CMakeFiles/dalvikvm.dir/build.make CMakeFiles/dalvikvm.dir/dalvikvm.o
 .PHONY : dalvikvm.o
 
-# target to build an object file
-dalvikvm.cc.o:
-	cd /Volumes/work/PRT && $(MAKE) -f dalvikvm/CMakeFiles/dalvikvm.dir/build.make dalvikvm/CMakeFiles/dalvikvm.dir/dalvikvm.cc.o
-.PHONY : dalvikvm.cc.o
-
-dalvikvm.i: dalvikvm.cc.i
-
+# target to preprocess a source file
+dalvikvm.i:
+	$(MAKE) -f CMakeFiles/dalvikvm.dir/build.make CMakeFiles/dalvikvm.dir/dalvikvm.i
 .PHONY : dalvikvm.i
 
-# target to preprocess a source file
-dalvikvm.cc.i:
-	cd /Volumes/work/PRT && $(MAKE) -f dalvikvm/CMakeFiles/dalvikvm.dir/build.make dalvikvm/CMakeFiles/dalvikvm.dir/dalvikvm.cc.i
-.PHONY : dalvikvm.cc.i
-
-dalvikvm.s: dalvikvm.cc.s
-
-.PHONY : dalvikvm.s
-
 # target to generate assembly for a file
-dalvikvm.cc.s:
-	cd /Volumes/work/PRT && $(MAKE) -f dalvikvm/CMakeFiles/dalvikvm.dir/build.make dalvikvm/CMakeFiles/dalvikvm.dir/dalvikvm.cc.s
-.PHONY : dalvikvm.cc.s
+dalvikvm.s:
+	$(MAKE) -f CMakeFiles/dalvikvm.dir/build.make CMakeFiles/dalvikvm.dir/dalvikvm.s
+.PHONY : dalvikvm.s
 
 # Help Target
 help:
@@ -175,6 +161,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Volumes/work/PRT && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

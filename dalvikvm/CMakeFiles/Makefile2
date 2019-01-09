@@ -50,10 +50,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/local/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/local/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -63,6 +63,43 @@ CMAKE_SOURCE_DIR = /Volumes/work/PRT/dalvikvm
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Volumes/work/PRT/dalvikvm
+
+#=============================================================================
+# Target rules for target CMakeFiles/dalvikvm.dir
+
+# All Build rule for target.
+CMakeFiles/dalvikvm.dir/all:
+	$(MAKE) -f CMakeFiles/dalvikvm.dir/build.make CMakeFiles/dalvikvm.dir/depend
+	$(MAKE) -f CMakeFiles/dalvikvm.dir/build.make CMakeFiles/dalvikvm.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Volumes/work/PRT/dalvikvm/CMakeFiles --progress-num=1,2 "Built target dalvikvm"
+.PHONY : CMakeFiles/dalvikvm.dir/all
+
+# Include target in all.
+all: CMakeFiles/dalvikvm.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dalvikvm.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/work/PRT/dalvikvm/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dalvikvm.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Volumes/work/PRT/dalvikvm/CMakeFiles 0
+.PHONY : CMakeFiles/dalvikvm.dir/rule
+
+# Convenience name for target.
+dalvikvm: CMakeFiles/dalvikvm.dir/rule
+
+.PHONY : dalvikvm
+
+# clean rule for target.
+CMakeFiles/dalvikvm.dir/clean:
+	$(MAKE) -f CMakeFiles/dalvikvm.dir/build.make CMakeFiles/dalvikvm.dir/clean
+.PHONY : CMakeFiles/dalvikvm.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/dalvikvm.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

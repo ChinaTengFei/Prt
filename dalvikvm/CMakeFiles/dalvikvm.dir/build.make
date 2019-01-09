@@ -34,66 +34,65 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/local/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/local/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Volumes/work/PRT
+CMAKE_SOURCE_DIR = /Volumes/work/PRT/dalvikvm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Volumes/work/PRT
+CMAKE_BINARY_DIR = /Volumes/work/PRT/dalvikvm
 
 # Include any dependencies generated for this target.
-include dalvikvm/CMakeFiles/dalvikvm.dir/depend.make
+include CMakeFiles/dalvikvm.dir/depend.make
 
 # Include the progress variables for this target.
-include dalvikvm/CMakeFiles/dalvikvm.dir/progress.make
+include CMakeFiles/dalvikvm.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include dalvikvm/CMakeFiles/dalvikvm.dir/flags.make
+include CMakeFiles/dalvikvm.dir/flags.make
 
-dalvikvm/CMakeFiles/dalvikvm.dir/dalvikvm.cc.o: dalvikvm/CMakeFiles/dalvikvm.dir/flags.make
-dalvikvm/CMakeFiles/dalvikvm.dir/dalvikvm.cc.o: dalvikvm/dalvikvm.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/work/PRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object dalvikvm/CMakeFiles/dalvikvm.dir/dalvikvm.cc.o"
-	cd /Volumes/work/PRT/dalvikvm && /Volumes/work/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dalvikvm.dir/dalvikvm.cc.o -c /Volumes/work/PRT/dalvikvm/dalvikvm.cc
+CMakeFiles/dalvikvm.dir/dalvikvm.o: CMakeFiles/dalvikvm.dir/flags.make
+CMakeFiles/dalvikvm.dir/dalvikvm.o: dalvikvm.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/work/PRT/dalvikvm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dalvikvm.dir/dalvikvm.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dalvikvm.dir/dalvikvm.o -c /Volumes/work/PRT/dalvikvm/dalvikvm.cc
 
-dalvikvm/CMakeFiles/dalvikvm.dir/dalvikvm.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dalvikvm.dir/dalvikvm.cc.i"
-	cd /Volumes/work/PRT/dalvikvm && /Volumes/work/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Volumes/work/PRT/dalvikvm/dalvikvm.cc > CMakeFiles/dalvikvm.dir/dalvikvm.cc.i
+CMakeFiles/dalvikvm.dir/dalvikvm.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dalvikvm.dir/dalvikvm.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Volumes/work/PRT/dalvikvm/dalvikvm.cc > CMakeFiles/dalvikvm.dir/dalvikvm.i
 
-dalvikvm/CMakeFiles/dalvikvm.dir/dalvikvm.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dalvikvm.dir/dalvikvm.cc.s"
-	cd /Volumes/work/PRT/dalvikvm && /Volumes/work/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Volumes/work/PRT/dalvikvm/dalvikvm.cc -o CMakeFiles/dalvikvm.dir/dalvikvm.cc.s
+CMakeFiles/dalvikvm.dir/dalvikvm.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dalvikvm.dir/dalvikvm.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Volumes/work/PRT/dalvikvm/dalvikvm.cc -o CMakeFiles/dalvikvm.dir/dalvikvm.s
 
 # Object files for target dalvikvm
 dalvikvm_OBJECTS = \
-"CMakeFiles/dalvikvm.dir/dalvikvm.cc.o"
+"CMakeFiles/dalvikvm.dir/dalvikvm.o"
 
 # External object files for target dalvikvm
 dalvikvm_EXTERNAL_OBJECTS =
 
-dalvikvm/dalvikvm: dalvikvm/CMakeFiles/dalvikvm.dir/dalvikvm.cc.o
-dalvikvm/dalvikvm: dalvikvm/CMakeFiles/dalvikvm.dir/build.make
-dalvikvm/dalvikvm: libnativehelper/libnativehelper.a
-dalvikvm/dalvikvm: dalvikvm/CMakeFiles/dalvikvm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Volumes/work/PRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dalvikvm"
-	cd /Volumes/work/PRT/dalvikvm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dalvikvm.dir/link.txt --verbose=$(VERBOSE)
+dalvikvm: CMakeFiles/dalvikvm.dir/dalvikvm.o
+dalvikvm: CMakeFiles/dalvikvm.dir/build.make
+dalvikvm: CMakeFiles/dalvikvm.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Volumes/work/PRT/dalvikvm/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dalvikvm"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dalvikvm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-dalvikvm/CMakeFiles/dalvikvm.dir/build: dalvikvm/dalvikvm
+CMakeFiles/dalvikvm.dir/build: dalvikvm
 
-.PHONY : dalvikvm/CMakeFiles/dalvikvm.dir/build
+.PHONY : CMakeFiles/dalvikvm.dir/build
 
-dalvikvm/CMakeFiles/dalvikvm.dir/clean:
-	cd /Volumes/work/PRT/dalvikvm && $(CMAKE_COMMAND) -P CMakeFiles/dalvikvm.dir/cmake_clean.cmake
-.PHONY : dalvikvm/CMakeFiles/dalvikvm.dir/clean
+CMakeFiles/dalvikvm.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/dalvikvm.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/dalvikvm.dir/clean
 
-dalvikvm/CMakeFiles/dalvikvm.dir/depend:
-	cd /Volumes/work/PRT && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Volumes/work/PRT /Volumes/work/PRT/dalvikvm /Volumes/work/PRT /Volumes/work/PRT/dalvikvm /Volumes/work/PRT/dalvikvm/CMakeFiles/dalvikvm.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : dalvikvm/CMakeFiles/dalvikvm.dir/depend
+CMakeFiles/dalvikvm.dir/depend:
+	cd /Volumes/work/PRT/dalvikvm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Volumes/work/PRT/dalvikvm /Volumes/work/PRT/dalvikvm /Volumes/work/PRT/dalvikvm /Volumes/work/PRT/dalvikvm /Volumes/work/PRT/dalvikvm/CMakeFiles/dalvikvm.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/dalvikvm.dir/depend
 
