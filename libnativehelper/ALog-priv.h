@@ -36,7 +36,7 @@
 
 #ifndef ALOG
 #define ALOG(priority, tag, fmt...) \
-    __android_log_print(ANDROID_##priority, tag, fmt)
+    //__android_log_print(ANDROID_##priority, tag, fmt)
 #endif
 
 #ifndef ALOGV

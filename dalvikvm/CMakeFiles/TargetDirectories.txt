@@ -1,0 +1,2 @@
+/Volumes/work/PRT/dalvikvm/CMakeFiles/rebuild_cache.dir
+/Volumes/work/PRT/dalvikvm/CMakeFiles/edit_cache.dir

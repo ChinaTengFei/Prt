@@ -1,0 +1,1 @@
+/Volumes/work/gcc-arm-none-eabi-8-2018-q4-major/bin/arm-none-eabi-c++   -std=c++11 --specs=nosys.specs -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/dalvikvm.dir/dalvikvm.cc.o  -o dalvikvm ../libnativehelper/libnativehelper.a 

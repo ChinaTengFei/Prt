@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libnativehelper.a  CMakeFiles/nativehelper.dir/AsynchronousCloseMonitor.cpp.o CMakeFiles/nativehelper.dir/JNIHelp.cpp.o CMakeFiles/nativehelper.dir/JniConstants.cpp.o CMakeFiles/nativehelper.dir/JniInvocation.cpp.o CMakeFiles/nativehelper.dir/toStringArray.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libnativehelper.a

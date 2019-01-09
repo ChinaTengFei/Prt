@@ -1,0 +1,8 @@
+/Volumes/work/PRT/CMakeFiles/rebuild_cache.dir
+/Volumes/work/PRT/CMakeFiles/edit_cache.dir
+/Volumes/work/PRT/dalvikvm/CMakeFiles/rebuild_cache.dir
+/Volumes/work/PRT/dalvikvm/CMakeFiles/edit_cache.dir
+/Volumes/work/PRT/dalvikvm/CMakeFiles/dalvikvm.dir
+/Volumes/work/PRT/libnativehelper/CMakeFiles/rebuild_cache.dir
+/Volumes/work/PRT/libnativehelper/CMakeFiles/edit_cache.dir
+/Volumes/work/PRT/libnativehelper/CMakeFiles/nativehelper.dir

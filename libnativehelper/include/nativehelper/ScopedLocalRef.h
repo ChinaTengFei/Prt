@@ -18,6 +18,6 @@
 #define SCOPED_LOCAL_REF_H_included
 
 #include "JNIHelp.h"
-#include <nativehelper/scoped_local_ref.h>
+#include "nativehelper/scoped_local_ref.h"
 
 #endif  // SCOPED_LOCAL_REF_H_included
